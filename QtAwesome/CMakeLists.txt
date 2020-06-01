@@ -16,3 +16,9 @@ target_include_directories(QtAwesome
     INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 )
+
+set_target_properties(QtAwesome PROPERTIES PUBLIC_HEADER 
+        "QtAwesome.h"
+        "QtAwesomeAnim.h"
+)
+
