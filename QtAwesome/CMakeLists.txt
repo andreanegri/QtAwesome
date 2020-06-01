@@ -17,8 +17,14 @@ target_include_directories(QtAwesome
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 )
 
-set_target_properties(QtAwesome PROPERTIES PUBLIC_HEADER 
+set_property(TARGET QtAwesome PROPERTY PUBLIC_HEADER 
         "QtAwesome.h"
         "QtAwesomeAnim.h"
 )
 
+install(
+    TARGETS QtAwesome
+    EXPORT qtawesome-targets
+    DESTINATION "lib"
+    PUBLIC_HEADER DESTINATION "include/qtawesome"
+)

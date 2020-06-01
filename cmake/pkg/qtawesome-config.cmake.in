@@ -1,0 +1,9 @@
+find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
+
+# MUST be after finds
+get_filename_component(_dir "${CMAKE_CURRENT_LIST_FILE}" PATH)
+get_filename_component(_prefix "${_dir}/../../.." ABSOLUTE)
+
+include("${_prefix}/share/cmake/targets/qtawesome-targets.cmake")
+
+message(STATUS "Found @PROJECT_NAME@ @PROJECT_VERSION@ at ${_prefix}")
