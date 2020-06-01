@@ -15,6 +15,7 @@ target_link_libraries(QtAwesome
 target_include_directories(QtAwesome
     INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+        $<INSTALL_INTERFACE:include>
 )
 
 set_property(TARGET QtAwesome PROPERTY PUBLIC_HEADER 
@@ -26,5 +27,5 @@ install(
     TARGETS QtAwesome
     EXPORT qtawesome-targets
     DESTINATION "lib"
-    PUBLIC_HEADER DESTINATION "include/qtawesome"
+    PUBLIC_HEADER DESTINATION "include"
 )
