@@ -1,4 +1,4 @@
-add_library(QtAwesome STATIC 
+add_library(QtAwesome SHARED 
     QtAwesome.cpp
     QtAwesomeAnim.cpp
     QtAwesome.qrc
