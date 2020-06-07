@@ -33,12 +33,15 @@ Just integers it is. Simpler is better.
 Installation
 ------------
 
-The easiest way to include QtAweome in your project is to copy the QtAwesome directory to your
-project tree and add the following `include()` to your Qt project file:
+In project folder:
 
-    include(QtAwesome/QtAwesome.pri)
+````
+cmake -B build
+cmake --build build
+cmake --install build --prefix [YOUR_INSTALL_PATH]
+````
 
-Now you are good to go!
+To use QtAwesome in your CMake-based project, remember to add install folder to `CMAKE_PREFIX_PATH`
 
 
 Usage
