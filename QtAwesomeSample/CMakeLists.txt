@@ -1,5 +1,5 @@
 add_executable(QtAwesomeSample
-  main.cpp
+    "main.cpp"
 )
 
 target_link_libraries(QtAwesomeSample

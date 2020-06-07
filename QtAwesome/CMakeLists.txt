@@ -1,7 +1,7 @@
 add_library(QtAwesome SHARED 
-    QtAwesome.cpp
-    QtAwesomeAnim.cpp
-    QtAwesome.qrc
+    "QtAwesome.cpp"
+    "QtAwesomeAnim.cpp"
+    "QtAwesome.qrc"
 )
 
 target_link_libraries(QtAwesome
